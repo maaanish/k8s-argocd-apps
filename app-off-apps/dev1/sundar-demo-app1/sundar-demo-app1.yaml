@@ -1,0 +1,14 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: sundar-demo-app1
+  namespace: argocd
+spec:
+  destination:
+    namespace: sundar-demo-app-dev1
+    server: 'https://kubernetes.default.svc'
+  source:
+    path: prod/
+    repoURL: 'https://github.com/alaghusundhar/sundar-k8s-demo-prod.git'
+    targetRevision: main
+  project: sundar-demo-app1
