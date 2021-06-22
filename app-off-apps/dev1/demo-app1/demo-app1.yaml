@@ -1,0 +1,14 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: demo-app1
+  namespace: argocd
+spec:
+  destination:
+    namespace: demo-app-dev1
+    server: 'https://kubernetes.default.svc'
+  source:
+    path: prod/
+    repoURL: 'https://github.com/maaanish/hello-kubernetes-prod-config.git'
+    targetRevision: master
+  project: demo-app1
