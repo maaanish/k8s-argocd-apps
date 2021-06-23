@@ -8,7 +8,7 @@ spec:
     namespace: demo-app-dev1
     server: 'https://kubernetes.default.svc'
   source:
-    path: prod/
+    path: prod
     repoURL: 'https://github.com/maaanish/hello-kubernetes-prod-config.git'
     targetRevision: master
   project: demo-app1
