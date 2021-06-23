@@ -11,4 +11,4 @@ spec:
     path: prod
     repoURL: 'https://github.com/maaanish/hello-kubernetes-prod-config.git'
     targetRevision: master
-  project: demo-app1
+  project: default
