@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: demo-app1
+  name: hello-kubernetes
   namespace: argocd
 spec:
   destination:
